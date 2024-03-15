@@ -6,6 +6,8 @@
   - MUI components
   - recoil (state management)
   - react router dom (routing)
+## Live Link 
+- project is hosted [here](https://monumental-dango-4d1668.netlify.app/)
 
 This is the implementation of frontend assignment provided by ENTNT firm to evaluate skills for junior web developer
 
