@@ -43,7 +43,7 @@ const ordersHeadCells = [
     id: 'dileveryStatus',
     numeric: false,
     disablePadding: false,
-    label: 'Dilevery Status',
+    label: 'Delivery Status',
   },
   {
     id: 'paymentStatus',
