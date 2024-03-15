@@ -1,8 +1,8 @@
-import {LineGraph} from '../index.js'
-
+import {LineGraph,ErrorComponent} from '../index.js'
 import {useRecoilValueLoadable} from 'recoil'
 import {visitorAtom} from '../../store/chart.atom.js'
 import Loader from '../Loader/Loader.jsx';
+
 
 const  Visitors= ()=>{
   const dataLoadable = useRecoilValueLoadable(visitorAtom);
@@ -11,7 +11,7 @@ const  Visitors= ()=>{
     
     case 'hasError':
       return (
-        <div>Error........</div>
+        <div><ErrorComponent message={'Error........'}/></div>
       )
     case 'loading':
       return(<Loader/>)
@@ -23,6 +23,7 @@ const  Visitors= ()=>{
             Number of Visitors visited in the current year (2024)
           </div>
           <LineGraph props = {{height:300,width:500,data:dataLoadable.contents} }></LineGraph>
+          
           </div>
       );
   }
@@ -30,6 +31,8 @@ const  Visitors= ()=>{
 
   
 }
+
+
 
 
 

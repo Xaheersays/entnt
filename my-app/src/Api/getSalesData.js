@@ -8,7 +8,7 @@ const getSalesData = ()=>{
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(data);
-    }, 100); // 2 seconds delay
+    }, 100); 
   });
 }
 

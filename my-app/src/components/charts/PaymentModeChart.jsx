@@ -1,7 +1,8 @@
 import React from "react";
-import {LineGraph,Loader} from '../index'
+import {LineGraph,Loader,ErrorComponent} from '../index'
 import { paymentModeAtom } from "../../store/chart.atom";
 import { useRecoilValueLoadable } from "recoil";
+
 
 const PaymentModeChart = ( )=>{
   const dataLoadable = useRecoilValueLoadable(paymentModeAtom)
@@ -9,7 +10,7 @@ const PaymentModeChart = ( )=>{
     
     case 'hasError':
       return (
-        <div>Error........</div>
+        <div><ErrorComponent message={'Error........'}/></div>
       )
     case 'loading':
       return(<Loader/>)

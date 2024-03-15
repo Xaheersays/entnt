@@ -18,4 +18,5 @@ import SlidingPanel from './slidingPanel/SlidingPanel'
 import Header from './Header/Header'
 import Search from './Search/Search'
 import TopCustomers from './customers/TopCustomers'
-export {SideBar,AppContainer,BarGraph,PieGraph,SummaryCard,Visitors,PaymentModeChart,LineGraph,Loader,Product,TableRowsLoader,Table,Order,ConfirmationPopup,ProductDetail,OrderDetail,SlidingPanel,Header,Search,TopCustomers}
+import ErrorComponent from './Error/Error'
+export {SideBar,AppContainer,BarGraph,PieGraph,SummaryCard,Visitors,PaymentModeChart,LineGraph,Loader,Product,TableRowsLoader,Table,Order,ConfirmationPopup,ProductDetail,OrderDetail,SlidingPanel,Header,Search,TopCustomers,ErrorComponent}

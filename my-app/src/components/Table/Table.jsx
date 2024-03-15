@@ -28,8 +28,8 @@
   import Stocks from '../product/stocks';
   import {CancelIcon,OutForDeliveryIcon,DoneDeliveryIcon,DispatchIcon,ViewIcon,EditIcon} from '../../assets/Icons/icons'
   import useConfirmation from '../../Hooks/useConfirmation';
-  import {ConfirmationPopup} from '../index'
-import { sliderAtom } from '../../store/slider.atom';
+  import {ConfirmationPopup,ErrorComponent} from '../index'
+  import { sliderAtom } from '../../store/slider.atom';
 
 
   function descendingComparator(a, b, orderBy) {
@@ -303,7 +303,7 @@ import { sliderAtom } from '../../store/slider.atom';
     switch(rowsLoadable.state){
       case 'hasError':
         console.log(rowsLoadable)
-        return <div>Some error ..... </div>
+        return <div><ErrorComponent message={'Some error .....'}/></div>
       case 'loading':
         console.log('load')
         return <TableSkeleton rows={6} cols={6}/>
@@ -385,16 +385,16 @@ import { sliderAtom } from '../../store/slider.atom';
                               <div
                               onClick={(e)=>{e.preventDefault()
                                           onView(row.id)}}
-                               className='inline-block transition-transform transform-gpu hover:translate-x-1 hover:translate-y-1'><ViewIcon size={18}/></div>
+                               className='inline-block transform hover:scale-110 transition-transform duration-300'><ViewIcon size={18}/></div>
 
                               <div 
                               onClick={(e)=>{
                                 e.preventDefault()
                                 handleEdit(e,row)
                               }}
-                              className='inline-block transition-transform transform-gpu hover:translate-x-1 hover:translate-y-1'><EditIcon size={20}/></div>
+                              className='inline-block transform hover:scale-110 transition-transform duration-300'><EditIcon size={20}/></div>
                               <div 
-                              className='inline-block transition-transform transform-gpu hover:translate-x-1 hover:translate-y-1'>
+                              className='inline-block transform hover:scale-110 transition-transform duration-300'>
                                  
                                 <DeleteIcon onClick={(e)=>deleteIndividualItem(e,row.id)}></DeleteIcon></div>
                             </div>
