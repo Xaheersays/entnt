@@ -1,36 +1,8 @@
-// import React from 'react'
-// import {Search} from '../index'
-// import { HomeIcon,NotificationIcon,AccountIcon,HamIcon } from '../../assets/Icons/icons'
-// const Header = () => {
-//   return (
-//     <div className=' flex justify-between p-2 items-center shadow-md '>
-//       <div className='flex items-center gap-3'>
-//         <div className='font-bold text-2xl py-2 text-slate-800 font-sans '>
-//             ERP
-//         </div>
-//         <Search/>
-//       </div>
-//       <div className='flex gap-3'>
-//         <div className='transform hover:scale-110 transition-transform duration-300 cursor-pointer'>
-//           <HomeIcon className='text-slate-800' size={25}/>
-//         </div>
-//         <div className='transform hover:scale-110 transition-transform duration-300 cursor-pointer'>
-//           <NotificationIcon className='text-slate-800' size={25}/>
-//         </div>
-//         <div className='transform hover:scale-110 transition-transform duration-300 cursor-pointer'>
-//           <AccountIcon className='text-slate-800' size={25}/>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-
-
-// export default Header
+import Logo from '../../assets/logo.png'
 import React, { useState } from 'react';
 import { Search } from '../index';
 import { HomeIcon, NotificationIcon, AccountIcon, HamIcon, CloseIcon } from '../../assets/Icons/icons';
-
+import { Link } from 'react-router-dom';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -41,8 +13,8 @@ const Header = () => {
   return (
     <div className='relative z-10 flex justify-between p-2 items-center shadow-md'>
       <div className='flex items-center gap-3'>
-        <div className='font-bold text-2xl py-2 text-slate-800 font-sans'>
-          ERP
+        <div className=' py-2 cursor-pointer'>
+          <Link to='/'><img className='h-12 w-12 rounded-md' src={Logo} alt="" /></Link>
         </div>
         <Search />
       </div>
