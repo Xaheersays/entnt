@@ -28,6 +28,8 @@ import { FaHome as HomeIcon } from "react-icons/fa";
 import { MdNotificationAdd as NotificationIcon} from "react-icons/md";
 import { MdAccountCircle as AccountIcon} from "react-icons/md";
 import { RiVerifiedBadgeFill as VerifiedIcon} from "react-icons/ri";
+import { GiHamburgerMenu as HamIcon } from "react-icons/gi";
+import { IoIosClose as CloseIcon } from "react-icons/io";
 
 
 
@@ -40,4 +42,4 @@ export const DownArrow = () => <BsGraphDownArrow color='red' size={20} />;
 export const DescendingIcon = ()=><TbSortDescendingNumbers size={20}/>
 export const AscendingIcon = ()=><TbSortAscendingNumbers size={20}/>
 
-export {DashBoardIcon,AnalyticsIcon,CustomersIcon,ProductsIcon,SalesIcon,OrdersIcon,SettingIcon,LogoutIcon,HideSideBarIcon ,ShowSideBarIcon,MoneyIcon,CancelIcon,OutForDeliveryIcon,DoneDeliveryIcon,DispatchIcon,CodIcon,BitcoinIcon,DigitalpayIcon,ViewIcon,EditIcon,StatusIconOn,StatusIconOff,HomeIcon,NotificationIcon,AccountIcon,VerifiedIcon}
+export {DashBoardIcon,AnalyticsIcon,CustomersIcon,ProductsIcon,SalesIcon,OrdersIcon,SettingIcon,LogoutIcon,HideSideBarIcon ,ShowSideBarIcon,MoneyIcon,CancelIcon,OutForDeliveryIcon,DoneDeliveryIcon,DispatchIcon,CodIcon,BitcoinIcon,DigitalpayIcon,ViewIcon,EditIcon,StatusIconOn,StatusIconOff,HomeIcon,NotificationIcon,AccountIcon,VerifiedIcon,HamIcon,CloseIcon}
