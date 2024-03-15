@@ -3,9 +3,9 @@
 ## Table of Contents
 - [Introduction](#Introduction)
 - [Features](#Features)
-- [Live Link](#LiveLink )
+- [Live Link](#Live-Link )
 - [Installation](#Installation)
-- [Execution of code](#Executionofcode)
+- [Execution of code](#Execution-of-code)
 - [Contributing](#Contributing)
 - [License](#License)
 
